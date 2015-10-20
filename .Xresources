@@ -1,0 +1,7 @@
+URxvt*scrollBar: false
+URxvt*background: Black
+URxvt*foreground: White
+URxvt.font:xft:Monospace:pixelsize=15
+URxvt.boldfont:xft:Monospace-Bold:pixelsize=15
+
+Xcursor.theme: Vanilla-DMZ-AA
