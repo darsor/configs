@@ -12,6 +12,9 @@ gimp
 synaptics
 archey
 g++
+baobab
+nautilus
+cursor set
 
 copy:
 .config/50-synaptics /etc/X11/xorg.conf.d/50-synaptics
