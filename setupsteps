@@ -6,6 +6,8 @@ i3
 htop
 vim
 yaourt
+pulseaudio
+alsa-utils
 urxvt
 chromium
 gimp
