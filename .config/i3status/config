@@ -13,10 +13,10 @@ general {
 
 order += "volume master"
 order += "cpu_usage"
+order += "cpu_temperature 0"
 order += "disk /"
 order += "wireless _first_"
 order += "battery 0"
-order += "load"
 order += "tztime local"
 
 volume master {
@@ -32,6 +32,12 @@ cpu_usage {
 	format = "CPU: %usage"
 }
 
+cpu_temperature 0 {
+    format = "CPU Temp: %degrees °C"
+    path = "/sys/bus/platform/devices/coretemp.0/hwmon/hwmon0/temp1_input"
+    max_threshold = 75
+}
+
 wireless _first_ {
         format_up = "W: (%quality at %essid) %ip"
         format_down = "W: down"
@@ -43,10 +49,6 @@ battery 0 {
 
 tztime local {
         format = "%Y-%m-%d %H:%M:%S"
-}
-
-load {
-        format = "%1min"
 }
 
 disk "/" {
