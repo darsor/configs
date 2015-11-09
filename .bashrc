@@ -7,7 +7,9 @@
 
 alias ls='ls --color=auto'
 alias shutdwn='sudo shutdown -h now'
-alias please='sudo !!'
+alias hibernate='systemctl hibernate'
+alias rightPI='ssh right@129.123.28.130'
+alias leftPI='ssh left@129.123.28.224'
 export VISUAL=vim
 export EDITOR=vim
 PS1='[\u@\h \W]\$ '
