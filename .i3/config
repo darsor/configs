@@ -185,6 +185,9 @@ exec --no-startup-id xsetroot -solid "#000000"
 # make mandelbrot viewer float
 for_window [title="Mandelbrot Viewer"] floating enable
 
+# start compton window compositor
+exec --no-startup-id compton -CGb
+
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
