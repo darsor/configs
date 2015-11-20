@@ -168,8 +168,8 @@ bar {
 }
 
 # screen brighness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec xbacklight -inc 2
+bindsym XF86MonBrightnessDown exec xbacklight -dec 2
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute #increase sound volume
@@ -186,7 +186,7 @@ exec --no-startup-id xsetroot -solid "#000000"
 for_window [title="Mandelbrot Viewer"] floating enable
 
 # start compton window compositor
-exec --no-startup-id compton -CGb
+#exec --no-startup-id compton -CGb
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a

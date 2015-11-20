@@ -125,3 +125,6 @@ autocmd BufReadPost *
      \   exe "normal! g`\"" |
      \ endif
 
+" Display title
+set title
+

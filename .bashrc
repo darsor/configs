@@ -10,6 +10,7 @@ alias shutdwn='sudo shutdown -h now'
 alias hibernate='systemctl hibernate'
 alias rightPI='ssh right@129.123.28.130'
 alias leftPI='ssh left@129.123.28.224'
+alias starwars='telnet towel.blinkenlights.nl'
 export VISUAL=vim
 export EDITOR=vim
 PS1='[\u@\h \W]\$ '
