@@ -184,6 +184,7 @@ exec --no-startup-id xsetroot -solid "#000000"
 
 # make mandelbrot viewer float
 for_window [title="Mandelbrot Viewer"] floating enable
+for_window [title="Mandelbrot Explorer"] floating enable
 
 # start compton window compositor
 #exec --no-startup-id compton -CGb
