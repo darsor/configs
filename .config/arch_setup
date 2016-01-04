@@ -22,3 +22,6 @@ copy:
 .config/50-synaptics /etc/X11/xorg.conf.d/50-synaptics
 .config/20-intel -> ditto
 
+when updating linux or linux-headers (kernel), do the following:
+    rebuild broadcom-wl
+    move new kernel files to /dev/sda2/
