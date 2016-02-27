@@ -1,7 +1,18 @@
 URxvt*scrollBar: false
 URxvt*background: Black
 URxvt*foreground: White
-URxvt.font:xft:Monospace:pixelsize=15
-URxvt.boldfont:xft:Monospace-Bold:pixelsize=15
+#URxvt.font:xft:Courier New:pixelsize=15
+#URxvt.boldFont:xft:Courier New:pixelsize=15:style=Bold
+URxvt.font:xft:Ubuntu Mono:pixelsize=16,style=regular
+URxvt.boldFont:xft:Ubuntu Mono:pixelsize=16,style=bold
+#URxvt.font:xft:DejaVu Sans Mono:pixelsize=14:style=Book
+#URxvt.boldFont:xft:DejaVu Sans Mono:pixelsize=14:style=Bold
+#URxvt.font:xft:Monospace:pixelsize=14
+#URxvt.boldFont:xft:Monospace:pixelsize=14:style=Bold
+#URxvt.letterSpace:-1
+xft.dpi: 100
+xft.antialias: true
+xft.hinting: true
+xft.hintstyle: hintfull
 
 Xcursor.theme: Vanilla-DMZ-AA

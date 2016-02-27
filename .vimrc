@@ -128,10 +128,26 @@ autocmd BufReadPost *
 " Display title
 set title
 
+" New command: sudow saves a read-only file
+cnoremap sudow w !sudo tee % >/dev/null
+
 " Easier split navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <C-A-J> <C-W><C-J>
+nnoremap <C-A-K> <C-W><C-K>
+nnoremap <C-A-L> <C-W><C-L>
+nnoremap <C-A-H> <C-W><C-H>
 set splitbelow
 set splitright
+
+" Map jk to Esc
+:imap jk <Esc>
+
+" Remap Ctrl-D and Ctrl-U to Ctrl-J and Ctrl-K, respectively
+nnoremap <C-J> <C-D>
+nnoremap <C-K> <C-U>
+
+" <Ctrl-L> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-L> :nohl<CR><C-l>
+
+" <Ctrl-d> drops to shell. Press again to return to vim
+noremap <C-d> :sh<cr>
